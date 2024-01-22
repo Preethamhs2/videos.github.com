@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos|TUENS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="https://kit.fontawesome.com/dccf925277.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="header">
+        <a href="index.html"><img src="images/logo/logo.jpg" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="video.html">Video</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div> 
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+ 
+    <div class="container">
+        <h1>How to Make a Video Gallery</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="images/products/P1 acoustic guitar.png" width="100%">
+                    <img src="play.png"class="play-btn" onclick="playVideo('video/guiter.mp4')">
+
+                </div>
+                <p>TO LEARN BASIC ACOUSTIC GUITAR IN 3-MINUTES !!!</p>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="images/products/P1 electric guitar.png" alt="">
+                        <img src="play.png"class="play-btn" onclick="playVideo('video/eg.mp4')">
+
+                    </div>
+                    <p>TO LEARN ELECTRIC GUITAR !!!</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="images/products/P2 drumming kit.png" width="100%">
+                        <img src="play.png"class="play-btn" onclick="playVideo('video/drums.mp4')">
+
+                    </div>
+                    <p>TO LEARN ACOUSTIC DRUMMING KIT !!!</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="images/products/P1 electric drumming kit.png" alt="">
+                        <img src="play.png"class="play-btn" onclick="playVideo('video/ed.mp4')">
+
+                    </div>
+                    <p>TO LEARN ELETRIC DRUMMING KIT !!!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-player" id="videoplayer">
+        <video  width="75%" controls autoplay id="myvideo">
+
+            <source src="g1.mp4" type="video/mp4" >
+        </video>
+        <img src="close.jpg" class="close-btn" onclick="stopbtn()">
+    </div>
+
+    <script src="video.js">
+    </script>
+
+
+</body>
+</html>

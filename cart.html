@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cart|TUNES</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/dccf925277.js" crossorigin="anonymous"></script>  
+    </head>
+
+<body>
+    <section id="header">
+        <a href="index.html"><img src="images/logo/logo.jpg" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#"  id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div> 
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+
+    <section id="page-header">
+        <h2># Musician Cart</h2>
+        <p> View My Items </p> 
+    </section>
+    
+    <section id="cart" class="section-p1">
+        <div class="cart-items">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>Image</td>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Subtotal</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cart-row">
+                        <td><button type="button" class="btn btn-danger remove-btn">Remove</button></td>
+                        <td><img src="images/products/P1 electric drumming kit.png" alt=""></td>
+                        <td>Electric Drumming kit</td>
+                        <td class="cart-price">₹15500</td>
+                        <td><input class="cart-quantity-input" type="number" value="1"></td>
+                        <td class="cart-subtotal">₹15500</td>
+                    </tr>
+                    <tr class="cart-row">
+                        <td><button type="button" class="btn btn-danger remove-btn">Remove</button></td>
+                        <td><img src="images/products/Q1 keyboard.png" alt=""></td>
+                        <td>DJ Pad+keyboard</td>
+                        <td class="cart-price">₹83000</td>
+                        <td><input class="cart-quantity-input" type="number" value="1"></td>
+                        <td class="cart-subtotal">₹83000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    <section id="cart-add" class="section-p1">        
+        <div id="cart-total">
+            <h3><br><br><br>Cart Total</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td class="cart-total-price">₹98500</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td class="cart-grand-total">₹98500</td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to Checkout</button>
+        </div>
+
+    </section>
+
+    <script src="cart.js"></script>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="images/logo/logo.jpg" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> bangalore,karanataka</p>
+            <p><strong>Phone:</strong> +910123456789</p>
+            <p><strong>Hours:</strong> 11:00AM - 9:00PM, Tues - Sun </p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="images/pay/app store.png" alt="">
+                <img src="images/pay/goolge play.png" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="images/pay/spg1.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>© 2023, TUNES </p>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
